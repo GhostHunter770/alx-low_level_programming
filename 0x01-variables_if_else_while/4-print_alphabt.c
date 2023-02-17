@@ -1,17 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - main block
- * Description: Get a random it  with 5
+ * Description:
  * Return: 0
  */
 int main(void)
 {
 	char c = 'a';
-	
 	while (c <= 'z')
 	{
-		putchar(c);
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
 		c++;
 	}
 	putchar('\n');
