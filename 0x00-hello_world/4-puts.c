@@ -1,4 +1,4 @@
-#include <stdio.i>
+#include <stdio.h>
 /**
 *main - using the puts function
 *Return: Always 0 (Success)
