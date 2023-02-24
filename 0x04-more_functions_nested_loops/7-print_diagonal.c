@@ -10,7 +10,7 @@ void print_diagonal(int n)
 {
 	int x, y;
 
-	if (b <- 0)
+	if (b <= 0)
 	{
 		_puthcar('\n');
 	}
