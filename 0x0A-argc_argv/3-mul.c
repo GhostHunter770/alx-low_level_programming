@@ -33,7 +33,7 @@ int _atoi(char *s)
 		{
 			digit = s[i] - '0';
 			if (d % 2)
-			digit = - digit;
+			digit = -digit;
 
 			n = n * 10 + digit;
 
