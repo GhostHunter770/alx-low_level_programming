@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* main - used to determines if the number generated is negative or positive
+/* 
+ * main - used to determines if the number generated is negative or positive
  *
  * Return: always 0
  */
@@ -16,7 +17,7 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n < 0 )
+	else if (n < 0)
 	{
 		printf("%d is negative\n", n);
 	}
