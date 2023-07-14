@@ -1,12 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* 
- * main - used to determines if the number generated is negative or positive
+/**
+ * main - Determines if a number is positive, negative or zero.
  *
- * Return: always 0
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int n;
