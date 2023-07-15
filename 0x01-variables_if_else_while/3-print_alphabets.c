@@ -7,15 +7,15 @@
  */
 int main(void)
 {
-	int i=97;
-	int I= 65;
+	int i = 97;
+	int I = 65;
 
 	while (i < 122)
 	{
 		putchar(i);
 		i++;
 	}
-	while (i < 90)
+	while (I < 90)
 	{
 		putchar(I);
 		I++;
