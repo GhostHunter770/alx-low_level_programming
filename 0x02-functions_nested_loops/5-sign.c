@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _isalpha - checks for alphabetic character
+ * print_sign - checks for signed character
  *
  * @n: is the int to be checked.
  *
- * Return: 1 if alpha, otherwaise 0.
+ * Return: 1 if more than 0, -1 if less than zero, otherwaise 0.
  */
 int print_sign(int n);
 {
