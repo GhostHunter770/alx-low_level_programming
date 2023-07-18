@@ -1,5 +1,5 @@
 #include "main.h"
-/** 
+/**
  *print_last_digit - prints the last digit of a number
  *
  *@n: the integer to check
@@ -8,5 +8,6 @@
  */
 int print_last_digit(int n)
 {
-	return (n % 10);
+	n = n % 10;
+	return (n);
 }
