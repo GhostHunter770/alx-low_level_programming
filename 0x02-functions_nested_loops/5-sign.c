@@ -6,7 +6,7 @@
  *
  * Return: 1 if more than 0, -1 if less than zero, otherwaise 0.
  */
-int print_sign(int n);
+int print_sign(int n)
 {
 	if (n > 0)
 		_putchar('+');
