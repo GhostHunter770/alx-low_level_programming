@@ -4,7 +4,7 @@
  *
  *@n1: first integer.
  *
- *@ n2: second integer
+ *@n2: second integer
  *
  * Return:n1+n2
  */
