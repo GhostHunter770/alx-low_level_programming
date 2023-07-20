@@ -7,7 +7,7 @@
  */
 void print_line(int n)
 {
-	int a = 0;
+	int a = 1;
 	while (a <= n)
 	{
 		if(n > 0)
@@ -20,4 +20,3 @@ void print_line(int n)
 	}
 	_putchar('\n');
 }
-
