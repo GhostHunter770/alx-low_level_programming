@@ -1,11 +1,11 @@
 #include "main.h"
+
 /**
- * print_line - draws a straight line in the terminal.
- * @n: number of lines to be printed.
- *
- * Return: void
+ * print_diagonal - draws a diagonal line on the terminal
+ * @n: number of times the character \ should be printed
  */
-void print_line(int n)
+
+void print_diagonal(int n)
 {
 	if (n <= 0)
 	{
