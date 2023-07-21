@@ -8,6 +8,7 @@
 void print_line(int n)
 {
 	int a = 1;
+
 	while (a <= n)
 	{
 		if(n > 0)
