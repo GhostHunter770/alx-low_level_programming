@@ -3,7 +3,7 @@
 /**
  * _isdigit - checks for uppercase character.
  *
- * @c - is the digit to be checked.
+ * @c: is the digit to be checked.
  *
  * Return: 1 if c is digit, 0 if otherwise
  */
