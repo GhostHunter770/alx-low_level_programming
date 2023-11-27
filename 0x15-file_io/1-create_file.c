@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 	if (fc == -1)
 		return (-1);
 
-	if (text_ != NULL)
+	if (text_content != NULL)
 	{
 		while (text_content[count] != '\0')
 			count++;
