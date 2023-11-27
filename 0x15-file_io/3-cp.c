@@ -26,44 +26,44 @@ void error_and_exit(char *str, int exit_code)
  */
 int main(int argc, char *argv[])
 {
-	int fileFrom;
-	int fileTo;
+	int file_from;
+	int file_to;
 	char buffer[BUFFER_SIZE];
 	ssize_t bytesN;
 
 	if (argc != 3)
 		error_and_exit("Usage: cp file_from file_to", 97);
 
-	fileFrom = open(argv[1], O_RDONLY);
-	if (fileFrom == -1)
+	file_from = open(argv[1], O_RDONLY);
+	if (file_from == -1)
 		error_and_exit("Error: Can't read from file NAME_OF_THE_FILE", 98);
 
-	fileTo = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (fileTo == -1)
+	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	if (file_to == -1)
 	{
-		close(fileFrom);
+		close(file_from);
 		error_and_exit("Error: Can't write to NAME_OF_THE_FILE", 99);
 	}
-	while ((bytesN = read(fileFrom, buffer, BUFFER_SIZE)) > 0)
+	while ((bytesN = read(file_from, buffer, BUFFER_SIZE)) > 0)
 	{
-		if (write(fileTo, buffer, bytesN) != bytesN)
+		if (write(file_to, buffer, bytesN) != bytesN)
 		{
-			close(fileFrom);
-			close(fileTo);
+			close(file_from);
+			close(file_to);
 			error_and_exit("Error: Can't write to NAME_OF_THE_FILE", 99);
 		}
 	}
 	if (bytesN == -1)
 	{
-		close(fileFrom);
-		close(fileTo);
+		close(file_from);
+		close(file_to);
 		error_and_exit("Error: Can't read from file NAME_OF_THE_FILE", 98);
 	}
 
-	if (close(fileFrom) == -1)
+	if (close(file_from) == -1)
 		error_and_exit("Error: Can't close fd FD_VALUE", 100);
 
-	if (close(fileTo) == -1)
+	if (close(file_to) == -1)
 		error_and_exit("Error: Can't close fd FD_VALUE", 100);
 
 	return 0;
